@@ -10,6 +10,11 @@ models:
 
   - name: stg_orders
     columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
       - name: order_id
         tests:
           - unique
