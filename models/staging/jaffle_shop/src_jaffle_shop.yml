@@ -11,6 +11,23 @@ sources:
     schema: public
     tables:
       - name: payments
+        columns:
+            - name: status
+              tests:
+                - accepted_values:
+                    values:
+                      - fail
+                      - success
       - name: orders
+        columns:
+            - name: id
+              tests:
+                - unique
+                - not_null            
       - name: customers
+        columns:
+            - name: id
+              tests:
+                - unique
+                - not_null
      
