@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: stg_jaffle_shop
+  - name: jaffle_shop
     loaded_at_field: _etl_loaded_at
     freshness:
       warn_after: {count: 12, period: hour}

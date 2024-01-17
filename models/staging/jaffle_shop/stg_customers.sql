@@ -5,7 +5,7 @@
         id as customer_id,
         first_name,
         last_name
-    from {{ source('stg_jaffle_shop','customers') }}
+    from {{ source('jaffle_shop','customers') }}
 )
 select * from customers
 
