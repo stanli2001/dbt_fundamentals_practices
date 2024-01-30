@@ -9,4 +9,4 @@ with payments as (
     where status='success'
 )
 select * from payments
--- {{ limit_rows() }}
+-- {{ limit_rows(100) }}
