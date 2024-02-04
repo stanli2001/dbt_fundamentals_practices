@@ -28,6 +28,22 @@ sources:
               tests:
                 - unique
                 - not_null            
+      - name: orders_group1
+        description: Raw orders data for group 1.
+        columns:
+            - name: id
+              description: Primary key for orders.
+              tests:
+                - unique
+                - not_null            
+      - name: orders_group2
+        description: Raw orders data for group 2.
+        columns:
+            - name: id
+              description: Primary key for orders.
+              tests:
+                - unique
+                - not_null            
       - name: customers
         description: Raw customers data.
         columns:

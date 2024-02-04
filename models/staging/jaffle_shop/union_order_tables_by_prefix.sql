@@ -1,0 +1,1 @@
+{{ union_tables_by_prefix(schema='public', prefix='orders_%',database='jaffle_shop') }}
