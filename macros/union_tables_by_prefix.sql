@@ -7,10 +7,5 @@
         database=database
     ) %}
 
-     {%- for table in tables -%}      
-        {%- if not loop.first %}            
-            union all
-        {%- endif %}
-        select * from {{ table }}
-     {%- endfor -%}
+   {{ dbt_utils.union_relations(relations = tables) }}
 {%- endmacro -%}
